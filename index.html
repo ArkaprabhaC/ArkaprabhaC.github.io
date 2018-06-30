@@ -75,21 +75,21 @@
              <!--<h1 class="font-weight-bold" style="color: black;">KEYNOTE SPEAKERS.</h1>-->
              <br/>   
         
-               <div class="card col-md-3 mr-auto ml-auto" >
+               <div class="card col-md-3 col-sm-6 mr-auto ml-auto" >
                   <img src="assets/speakers/kdeb.jpg" alt="Avatar" style="width:100%;" >
                   <div class="card-body">
                     <h4 class="text-center mt-3"><b>Prof. Kalyanamoy Deb</b></h4> 
                     <p class="text-center">Michigan State University, USA</p> 
                   </div>
                 </div>
-               <div class="card col-md-3 mr-auto ml-auto" >
+               <div class="card col-md-3 col-sm-6 mr-auto ml-auto" >
                   <img src="assets/speakers/hisao.png" alt="Avatar" style="width:100%;" >
                   <div class="card-body">
                     <h4 class="text-center mt-3"><b>Prof. Hisao Ishibuchi</b></h4> 
                     <p class="text-center">Southern University of Science and Technology(SUSTech), China</p> 
                   </div>
                </div>
-               <div class="card col-md-3 mr-auto ml-auto" >
+               <div class="card col-md-3 col-sm-6 mr-auto ml-auto" >
                   <img src="assets/speakers/mike.png" alt="Avatar" style="width:100%;" >
                   <div class="card-body">
                     <h4 class="text-center mt-3"><b>Prof. Mike Hinchey</b></h4> 
@@ -107,7 +107,7 @@
         <br/>
          <div class="row">
                 <br/>
-                 <div class="card col-md-3 mr-auto ml-auto" >
+                 <div class="card col-md-3 col-sm-6 mr-auto ml-auto" >
                   <img src="assets/speakers/aladdin.jpeg" alt="Avatar" style="width:100%;" >
                   <div class="card-body">
                     <h4 class="text-center mt-3"><b>Dr. Aladdin Ayesh</b></h4> 
@@ -115,7 +115,7 @@
                   </div>
                 </div>
                 
-                <div class="card col-md-3 mr-auto ml-auto" >
+                <div class="card col-md-3 col-sm-6 mr-auto ml-auto" >
                   <img src="assets/speakers/pmitra.jpeg" alt="Avatar" style="width:100%;" >
                   <div class="card-body">
                     <h4 class="text-center mt-3"><b>Prof. Pabitra Mitra</b></h4> 
@@ -123,7 +123,7 @@
                   </div>
                 </div>
                  
-                 <div class="card col-md-3 mr-auto ml-auto" >
+                 <div class="card col-md-3 col-sm-6 mr-auto ml-auto" >
                   <img src="assets/speakers/suvira.png" alt="Avatar" style="width:100%;" >
                   <div class="card-body">
                     <h4 class="text-center mt-3"><b>Suvira Srivastav</b></h4> 
@@ -180,7 +180,7 @@
    <footer class="footer-info">
             <div id="footer-menu">
                 <div class="container pt-4 pb-1" style="background-color: #f4f1ec;">
-                    <ul id="menu-footer-menu" class="nav flex-column flex-sm-row justify-content-center text-center mr-auto ml-auto" style="font-size: 1.05rem;">
+                    <ul id="menu-footer" class="nav flex-column flex-sm-row justify-content-center text-center" style="font-size: 1.05rem;">
                         <li class="menu-item"><a href="">Partners</a></li>
                         <li class="menu-item"><a href="">Non-Profit Organizations</a></li>
                         <li class="menu-item"><a href="">Get Involved</a></li>
@@ -237,6 +237,19 @@
     <script type="text/javascript">
         $(document).ready(function(){
             
+            $(window).resize(function() {
+              if ($(window).width() < 800) {
+                 //$('#menu-footer').removeClass("ml-auto mr-auto"); 
+                 $('.card').removeClass("ml-auto mr-auto"); 
+              }else{
+                  $('.card').addClass("ml-auto mr-auto"); 
+              }
+            });
+            /*if($(window).width()<800){
+                console.log("triggered");
+                $('#menu-footer').removeClass("ml-auto");   
+            }*/
+            
             //Default  
            $('.section-text').load('assets/includes/steeringCommittee.html');  
             
@@ -255,10 +268,11 @@
             $('.load-5').click(function(){
                  $('.section-text').load('assets/includes/technicalProgramme.html');           
             });  
+            
+            
         });
     
-        
-    
     </script>
+    
 </body>
 </html>

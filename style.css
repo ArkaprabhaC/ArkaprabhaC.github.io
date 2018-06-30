@@ -212,6 +212,17 @@ body{
 
 
 /*------responsive styles for header------*/
+@media only screen and (max-width: 800px) {
+    .card{
+        float: left;
+    }
+    .navbar-toggler{
+        display: block;
+    }
+    hr{
+        display: none;
+    }
+}
 @media only screen and (max-width: 600px) {
     hr{
         display: none;
