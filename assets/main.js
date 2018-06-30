@@ -1,4 +1,4 @@
- //Script for preloader
+ //Improved Script for preloader
         
 $(window).on('load', function(){
     $('.preloader-overlay').fadeOut();
@@ -9,18 +9,18 @@ $(window).on('load', function(){
 //Script for AJAX dynamic page load and class removal on event trigger( viewport width reduction )
 
 $(document).ready(function(){
-            
-            $(window).resize(function() {
+    
               if ($(window).width()>600 && $(window).width() < 800) {
-                 //$('#menu-footer').removeClass("ml-auto mr-auto"); 
+                 
                  $('.card').removeClass("ml-auto mr-auto"); 
               }else{
                   $('.card').addClass("ml-auto mr-auto"); 
                   
               }
-            });
+        
             
-            
+            //AJAX scripts
+    
             //Default  
            $('.section-text').load('assets/includes/steeringCommittee.html');  
             
@@ -39,7 +39,6 @@ $(document).ready(function(){
             $('.load-5').click(function(){
                  $('.section-text').load('assets/includes/technicalProgramme.html');           
             });  
-            
             
 });
     

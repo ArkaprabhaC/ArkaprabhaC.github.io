@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700,900');
 
+/*--------- Basic Styles-------*/
 body{
     padding: 0;
     margin: 0;
@@ -49,6 +50,11 @@ body{
         transform: rotate(360deg);
     }
 }
+/*--------- Basic Styles end-------*/
+
+
+
+
 
 /*-----header styles-------*/
 .v-header{
@@ -56,8 +62,15 @@ body{
     display: flex;
     align-items: center;
     color: #fff;
+    background-image: url(assets/sanjeev-saroy-513587-unsplash.jpg);
+    background-size: cover; 
+    background-position: 80%;
+    
 }
-.fullscreen-video-wrapper{
+#heroVideo{
+        display: block;
+    }
+.video-wrapper{
     position: absolute;
     top: 0;
     left: 0;
@@ -65,7 +78,7 @@ body{
     width: 100%;
     overflow: hidden;
 }
-.fullscreen-video-wrapper video{
+.video-wrapper video{
     min-width: 100%;
     min-height: 100%;
     position: absolute;
@@ -238,6 +251,14 @@ body{
 .modal-body h2{
         font-size: 1.6rem;
     }
+.signature-uem-image{
+        display: block;
+    }
+.linkedin-redirect:hover{
+    font-size: 1.45rem;
+    font-weight: 600;
+    text-decoration: none;
+}
 /*----------end footer styles--------------*/
 
 
@@ -253,13 +274,28 @@ body{
     hr{
         display: none;
     }
+    .signature-uem-image{
+        display: block;
+        height: 40px;
+        width: 50px;
+    }
+    #heroVideo{
+        display: none;
+    }
 }
 @media only screen and (max-width: 600px) {
+    .signature-uem-image{
+        display: none;
+    }
     hr{
         display: none;
     }
     .v-header{
       height: 90vh;
+      
+    }
+    #heroVideo{
+        display: none;
     }
     .header-overlay{
         padding-top: 5rem;
