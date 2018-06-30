@@ -238,17 +238,14 @@
         $(document).ready(function(){
             
             $(window).resize(function() {
-              if ($(window).width() < 800) {
+              if ($(window).width()>600 && $(window).width() < 800) {
                  //$('#menu-footer').removeClass("ml-auto mr-auto"); 
                  $('.card').removeClass("ml-auto mr-auto"); 
               }else{
                   $('.card').addClass("ml-auto mr-auto"); 
+                  
               }
             });
-            /*if($(window).width()<800){
-                console.log("triggered");
-                $('#menu-footer').removeClass("ml-auto");   
-            }*/
             
             //Default  
            $('.section-text').load('assets/includes/steeringCommittee.html');  
