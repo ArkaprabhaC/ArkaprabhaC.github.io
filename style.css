@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700,900');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #fff;
+    overflow-x: hidden;
+}
+.container-fluid{
+    margin:0 !important;
+    padding:0 !important;
+}
+.in-between{
+    margin-bottom: 3rem;
+}
+
+
+
+/*-----header styles-------*/
+.v-header{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.fullscreen-video-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.fullscreen-video-wrapper video{
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+}
+.header-overlay{
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+.header-heading h1{
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.header-body p{
+    font-weight: 400;
+}
+/*-----header styles end-------*/
+
+
+
+
+
+
+
+/*---------committees section styles---------*/
+.committee{
+    margin-top: 3rem;
+    color: #422d3a;
+}
+.section-overlay{
+    background-color: #f4f1ec;
+    padding: 2rem;
+}
+.section-image{
+    float: right;
+    background: url(assets/section-community.jpg) no-repeat center;
+    
+}
+.navbar-toggler{
+    display: none;
+}
+.navbar-nav .nav-item{
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: #422d3a;
+
+}
+.navbar-nav .nav-item:hover{
+    color:black;
+    /*color:#594a4a;*/
+    border-bottom: 5px solid black;
+    padding-bottom: 1rem;
+}
+
+/*-----------committees section styles end--------*/
+
+
+
+
+/*-----------speakers section styles-------*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card-body{
+    padding: 2px 16px;
+    color: black;
+}
+
+/*-----------speakers section styles end-------*/
+
+
+
+
+/*-----------location section styles-------*/
+.location-wrapper{
+    padding: 2rem;
+    margin-bottom: 3rem;
+    background-color: #f9fafc;
+    color: #422d3a;
+}
+.mapouter{text-align:right;}
+.gmap_canvas {overflow:hidden;background:none!important;height:400px;}
+.location-header{
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.location-content{
+    font-size: 1.1rem;
+}
+/*------end location section styles------*/
+
+
+/*-------------Highlights section------------*/
+.highlights .container{
+    padding: 2rem;
+    background-color: #f4f1ec;
+}
+/*-------------Highlights section end------------*/
+
+
+
+
+/*-----------footer styles--------------*/
+
+
+.footer-info{
+    border-top: 5px solid #422d3a;
+    background-color: #f4f1ec;
+}
+#footer-menu #menu-footer-menu {
+    margin-bottom: 2rem;
+}
+.nav {
+    list-style: none;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+.nav li{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.nav li a{
+    color: #422d3a;
+}
+.nav li a:hover{
+    text-decoration: none;
+    color: #888679;
+}
+.copyright{
+        font-weight: bold;
+        color: #422d3a;
+        font-size: 1.05rem;
+}
+
+.image-1{
+    border-radius: 50%;
+    display: block;
+    margin:0 auto;
+}
+.modal-header h3{
+    color: black;
+    position: relative;
+    top:0.4rem;
+}
+.modal-body h2{
+    color: black;
+}
+.modal-body p{
+    color: black;
+    font-size: 1rem;
+}
+.discrete-logo{
+    width: 5%;
+}
+.copyright-credits{
+   color: #fc2317; 
+}
+.copyright-credits:hover{
+   color: #ff9900;
+   text-decoration: none;
+}
+.modal-body h2{
+        font-size: 1.6rem;
+    }
+/*----------end footer styles--------------*/
+
+
+
+/*------responsive styles for header------*/
+@media only screen and (max-width: 600px) {
+    hr{
+        display: none;
+    }
+    .v-header{
+      height: 90vh;
+    }
+    .header-overlay{
+        padding-top: 5rem;
+    }
+    .section-image{
+        height: 50vh;
+    }
+    .info2-wrapper{
+      padding: 2rem;   
+    }
+    .section-overlay{
+        padding: 2rem;
+    }
+    .info3-wrapper{
+        padding: 2rem;
+    }
+    
+    
+    .navbar-toggler{
+        display: block;
+    }
+    .fullscreen-menu{
+        display:none;
+    }
+    .navbar-nav .nav-item{
+        border-bottom: 1px solid #594a4a;
+    }
+    .navbar-nav .nav-item:hover{
+        border:none;
+        border-bottom: 3px solid #594a4a;
+        line-height: 2rem;
+        
+    }
+    
+    .fullscreen-committee-links{
+        display: none;
+    }
+    .card{
+        margin-bottom: 1rem;
+        width: 70vw;
+    }
+    .keynote-spk-heading{
+        font-size: 2rem;
+    }
+    .invited-spk-heading{
+        font-size: 2rem;
+    }
+    .hightlights-header{
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: bold;
+    }
+    .location-header{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .location-content{
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.8rem;
+    }
+    .discrete-logo{
+        width: 15%;
+    }
+    .nav{
+         text-align: center;
+         margin-left: 0rem;
+         margin-right: 0rem;
+    }
+    .copyright{
+        font-size: 0.95rem;
+    }
+    .footer-info{
+        line-height: 1.7rem;
+    }
+    .modal-header h3{
+        top:0.80rem;
+    }
+    .modal-body h2{
+        font-size: 1.6rem;
+    }
+}
