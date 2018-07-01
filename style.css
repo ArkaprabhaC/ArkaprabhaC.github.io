@@ -67,6 +67,17 @@ body{
     background-position: 80%;
     
 }
+.thumbnail{
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 120px;
+    height: 90px;
+    
+}
+.optronix-thumbnail{
+    
+}
 #heroVideo{
         display: block;
     }
@@ -282,6 +293,13 @@ body{
     #heroVideo{
         display: none;
     }
+    .thumbnail{
+        margin-right: 20px;
+        margin-top: 5px;
+        width: 55px;
+        height: 45px;
+
+    }
 }
 @media only screen and (max-width: 600px) {
     .signature-uem-image{
@@ -293,6 +311,13 @@ body{
     .v-header{
       height: 90vh;
       
+    }
+    .thumbnail{
+        margin-right: 20px;
+        margin-top: 5px;
+        width: 55px;
+        height: 45px;
+    
     }
     #heroVideo{
         display: none;
