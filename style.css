@@ -309,6 +309,9 @@ body{
       height: 90vh;
       
     }
+    .header-body p{
+        font-size: 0.80rem;
+    }
     .thumbnail{
         margin-right: 20px;
         margin-top: 5px;
@@ -321,9 +324,6 @@ body{
     }
     .header-overlay{
         padding-top: 5rem;
-    }
-    .header-body p{
-         font-size: 0.80rem;   
     }
     .section-image{
         height: 50vh;
