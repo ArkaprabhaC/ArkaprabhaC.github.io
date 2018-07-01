@@ -70,12 +70,9 @@ body{
 .thumbnail{
     margin-right: 20px;
     margin-top: 5px;
-    margin-left: 20px;
+    margin-left: 15px;
     width: 120px;
     height: 90px;
-    
-}
-.optronix-thumbnail{
     
 }
 #heroVideo{
