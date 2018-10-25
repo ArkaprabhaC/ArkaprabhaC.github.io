@@ -4,16 +4,6 @@ $(window).on('load', function(){
     $('.preloader-overlay').fadeOut();
 });
      
-
-//Script for navbar links turning active on click
-$(document).ready(function(){
-  $(".navbar-nav > li ").click(function(){
-      $clickedBtn = $(this);
-      $('.navbar-nav > li').removeClass('active');
-      $clickedBtn.addClass('active');
-  });
-});
-
 //Script for smooth scrolling
  $(document).ready(function (){
             $(".home_link").click(function (){
@@ -86,7 +76,6 @@ $(document).ready(function(){
     
 
 
-
 //Script for AJAX dynamic page load and class removal on event trigger( viewport width reduction )
 
 $(document).ready(function(){
@@ -103,16 +92,16 @@ $(document).ready(function(){
             //AJAX scripts
     
             //Default  
-           $('.section-text').load('assets/includes/steeringCommittee.html');  
+           $('.section-text').load('assets/includes/advisoryBoard.html');  
             
             $('.load-1').click(function(){
-                 $('.section-text').load('assets/includes/steeringCommittee.html');           
+                 $('.section-text').load('assets/includes/advisoryBoard.html');           
             }); 
             $('.load-2').click(function(){
-                 $('.section-text').load('assets/includes/editorialCommittee.html');           
+                 $('.section-text').load('assets/includes/organizingCommittee.html');           
             }); 
             $('.load-3').click(function(){
-                 $('.section-text').load('assets/includes/advisoryBoard.html');           
+                 $('.section-text').load('assets/includes/technicalCommittee.html');           
             }); 
             
             

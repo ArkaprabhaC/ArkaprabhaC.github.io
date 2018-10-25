@@ -37,14 +37,14 @@
 
    <!-----Navbar ---------> 
    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" style="z-index:500;">
-      <!--<a class="navbar-brand" href="#">Navbar</a>-->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+     
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item active">
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav mx-auto font-weight-bold">
+          <li class="nav-item">
             <a class="nav-link home_link" href="#">Home</a>
           </li>
           <li class="nav-item">
@@ -127,7 +127,7 @@
 
 
   <!-----Page content starts here------>
-   <header class="container-fluid v-header">
+   <header class="container-fluid v-header" id="vid-header">
        <div class="video-wrapper">
          
          <!--- UEM thumbnail-------->
@@ -160,7 +160,7 @@
    </header>
    
    <section class="about">
-      <div class="container in-between">
+      <div class="container in-between" id="about-section">
          <div class="row">
           <div class="col-md-12 text-right section-overlay">
               <h2 class="font-weight-bold text-center pb-4 about-header" style="color: #422d3a;">ABOUT</h2>
@@ -173,7 +173,7 @@
    </section>
    
    <section class="important-dates">
-      <div class="container in-between">
+      <div class="container in-between" id="impDates">
          <div class="row">
           <div class="col-md-12 text-right section-overlay">
               <h2 class="font-weight-bold text-center pb-4 about-header" style="color: #422d3a;">IMPORTANT DATES</h2>
@@ -225,7 +225,7 @@
    </section>
    
    <section class="committee">
-      <div class="container in-between">
+      <div class="container in-between" id="committees">
          <div class="row">
           <div class="col-md-12 float-left section-overlay">
              <h1 class="font-weight-bold text-center">Committees</h1>
@@ -257,7 +257,7 @@
    </section>
    
    <section class="registration_details">
-      <div class="container in-between">
+      <div class="container in-between" id="reg">
          <div class="row">
           <div class="col-md-12 text-center section-overlay">
               <h2 class="font-weight-bold text-center pb-4 about-header" style="color: #422d3a;">REGISTRATION DETAILS</h2>
@@ -391,7 +391,7 @@
    </section>
 
    <section class="past_conf">
-      <div class="container in-between">
+      <div class="container in-between" id="past_conferences">
          <div class="row">
           <div class="col-md-12  section-overlay">
               <h2 class="font-weight-bold text-center pb-4 about-header" style="color: #422d3a;">PAST CONFERENCES</h2>
@@ -448,7 +448,7 @@
 
 
    <section class="gallery-block compact-gallery">
-      <div class="container gallery-overlay">
+      <div class="container gallery-overlay id="gallery">
         
          <h2 class="font-weight-bold text-center p-4  about-header" style="color: #422d3a;">GALLERY</h2>
       
@@ -606,7 +606,7 @@
    
    
    <section class="highlights">
-      <div class="container in-between">
+      <div class="container in-between" id="yt-highlights">
          <div class="row">
           <div class="col-md-12 text-right">
              <h2 class="font-weight-bold text-center pb-4 hightlights-header" style="color: #422d3a;">LAST YEAR'S HIGHLIGHTS</h2>
@@ -624,7 +624,7 @@
    
    
    <section class="location">
-      <div class="container location-wrapper in-between">
+      <div class="container location-wrapper in-between" id="loc">
          <div class="row">
          <div class="col-md-5">
               <h4 class="location-header">EVENT LOCATION</h4>
@@ -663,7 +663,7 @@
 
       <footer class="page-footer font-small blue pt-4" style="background-color: #000;">
 
-        <div class="container-fluid text-center text-md-left">
+        <div class="container text-center text-md-left" id="footer-end">
 
           <div class="row">
 
@@ -698,49 +698,14 @@
 
 
         </div>
-        <div class="footer-copyright text-center py-3">
-          Website created with <i class="fas fa-heart" style="color: red; font-size:1.2em;"></i> by <a href="https://www.linkedin.com/in/arkaprabha-chatterjee-83483a167/" class="signature">Arkaprabha Chatterjee</a>
+        <div class="footer-copyright text-center py-3" style="font-size:0.8em;"">
+          Website created with <i class="fas fa-heart" style="color: red;"></i> by <a href="https://www.linkedin.com/in/arkaprabha-chatterjee-83483a167/" class="signature">Arkaprabha Chatterjee</a>
         </div>
       
 
       </footer>
        
-   
-   
-   
-       <!--Team Discrete Modal -->
-        <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <img src="assets/discrete.png" class="img-fluid float-left discrete-logo">
-                <h3 class="lead ml-3" style="font-weight: 500">Discrete</h3>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: relative;top: 10px;right: 10px;">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                 <div class="row">
-                   <div class="col-md-6">
-                        <img src="https://scontent.fccu3-1.fna.fbcdn.net/v/t1.0-9/17155664_1261620017270687_3943232097341115295_n.jpg?_nc_cat=0&oh=276589d0439fa1681ef06114b2d8dbcd&oe=5BE6814E" width="50%" class="img-fluid image-1">
-                        <br/>
-                        <a href="https://www.linkedin.com/in/arkaprabha-chatterjee-83483a167/" style="text-decoration: none;"><h2 class="text-center linkedin-redirect">Arkaprabha Chatterjee</h2></a>
-                        <p class="lead text-center">Full Stack Web Developer.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="https://media.licdn.com/dms/image/C5103AQHCk9gmAAWcxw/profile-displayphoto-shrink_800_800/0?e=1535587200&v=beta&t=K1lP6FnRk32-Phby_IEXuD3PIARxa6Nqbmgll4LDh50" width="50%" class="img-fluid image-1">
-                        <br/>
-                        <a href="https://www.linkedin.com/in/chayan007/" style="text-decoration: none;"><h2 class="text-center linkedin-redirect">Chayan Datta</h2></a>
-                        <p class="lead text-center">Full Stack Web Developer.</p>
-                    </div>
-                   
-                  </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-   <!----Team Discrete modal end--------->
+  
    
    
     <!--Bootstrap JS-->
