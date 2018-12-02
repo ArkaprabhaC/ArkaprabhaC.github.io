@@ -1,9 +1,9 @@
  //Improved Script for preloader
-        
+
 $(window).on('load', function(){
     $('.preloader-overlay').fadeOut();
 });
-     
+
 //Script for smooth scrolling
  $(document).ready(function (){
             $(".home_link").click(function (){
@@ -36,8 +36,12 @@ $(window).on('load', function(){
                     scrollTop: $(".past_conf").offset().top - 50
                 }, 1000);
             });
+            $(".call_for_paper").click(function(){
+              $('html, body').animate({
+                  scrollTop: $(".call-for-paper").offset().top - 50
+              }, 1000);
+            });
 
-           
            $(".gall_btn").click(function (){
                 $('html, body').animate({
                     scrollTop: $(".gallery-block").offset().top - 50
@@ -54,56 +58,55 @@ $(window).on('load', function(){
                     scrollTop: $(".location").offset().top - 50
                 }, 1000);
             });
-           
-            
-          
+
+
+
         });
 
-    
+
     //Dark background to transparent background navbar conversion
       $(document).ready(function() {
         $(window).scroll(function() {
-          if($(this).scrollTop() > 100) { 
+          if($(this).scrollTop() > 100) {
               $('.menu-nav').removeClass('bg-transparent');
               $('.menu-nav').addClass('bg-dark');
           } else {
               $('.menu-nav').removeClass('bg-dark');
               $('.menu-nav').addClass('bg-transparent');
-              
+
           }
         });
       });
-    
+
 
 
 //Script for AJAX dynamic page load and class removal on event trigger( viewport width reduction )
 
 $(document).ready(function(){
-    
+
               if ($(window).width()>600 && $(window).width() < 800) {
-                 
-                 $('.card').removeClass("ml-auto mr-auto"); 
+
+                 $('.card').removeClass("ml-auto mr-auto");
               }else{
-                  $('.card').addClass("ml-auto mr-auto"); 
-                  
+                  $('.card').addClass("ml-auto mr-auto");
+
               }
-        
-            
+
+
             //AJAX scripts
-    
-            //Default  
-           $('.section-text').load('assets/includes/advisoryBoard.html');  
-            
+
+            //Default
+           $('.section-text').load('assets/includes/advisoryBoard.html');
+
             $('.load-1').click(function(){
-                 $('.section-text').load('assets/includes/advisoryBoard.html');           
-            }); 
+                 $('.section-text').load('assets/includes/advisoryBoard.html');
+            });
             $('.load-2').click(function(){
-                 $('.section-text').load('assets/includes/organizingCommittee.html');           
-            }); 
+                 $('.section-text').load('assets/includes/organizingCommittee.html');
+            });
             $('.load-3').click(function(){
-                 $('.section-text').load('assets/includes/technicalCommittee.html');           
-            }); 
-            
-            
+                 $('.section-text').load('assets/includes/technicalCommittee.html');
+            });
+
+
 });
-    
