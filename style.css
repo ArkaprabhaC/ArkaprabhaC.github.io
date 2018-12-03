@@ -63,25 +63,25 @@ html, body{
     display: flex;
     align-items: center;
     color: #fff;
-    background-image: url(assets/lights-night-unsharp-blured.jpg);
-    background-size: cover; 
+    background-image: url(assets/blurry.jpg);
+    background-size: cover;
     background-position: 80%;
-    
+
 }
 .logo{
-    height: 70px; 
-    width: 90px; 
+    height: 70px;
+    width: 90px;
     z-index: 400;
-    margin-left: auto;
-    margin-right: 1.5rem; 
+
+    margin-right: 0rem;
     transform: translateY(80vh);
-    
+
 }
 .logo_inner{
-    height: 70px; width: 90px; z-index: 400;margin-right: 1.5rem;transform: translateY(80vh);
+    height: 70px; width: 90px; z-index: 400;margin-right: 0.5rem;transform: translateY(80vh);
 }
 .logo_outer_left{
-    height: 70px; width: 90px; z-index: 400;margin-left: auto;margin-right: 1.5rem; transform: translateY(80vh);
+    height: 70px; width: 90px; z-index: 400;margin-left: auto;margin-right: 00.5rem; transform: translateY(80vh);
 }
 .logo_outer_right{
     height: 70px; width: 90px; z-index: 400;margin-right: auto;transform: translateY(80vh);
@@ -127,10 +127,19 @@ html, body{
 
 /*-----header styles end-------*/
 
+/*------------invited speaker style-----------*/
+.portfolio-image{
+  display:block; margin:0 auto; border-radius:50%
+}
+.text-col{
+  color:#000;
+}
+
+/*------------invited speaker style end-----------*/
 
 /*------- Past conferences styles--------*/
 .table-container{
-    overflow-x: scroll; 
+    overflow-x: scroll;
 
 }
 
@@ -147,15 +156,18 @@ html, body{
 .section-overlay{
     background-color: #f4f1ec;
     padding: 2rem;
-    
+
 }
 .section-image{
     float: right;
     background: url(assets/section-community.jpg) no-repeat center;
-    
+
 }
 .navbar-toggler{
     display: none;
+}
+.commitee-btn{
+  display: none;
 }
 .nav-item-committee{
     font-size: 1.05rem;
@@ -261,16 +273,16 @@ html, body{
 @media (min-width: 576px) {
 
   .gallery-block.compact-gallery .item .description {
-    opacity: 0; 
+    opacity: 0;
   }
 
   .gallery-block.compact-gallery .item a:hover .description {
-    opacity: 1; 
-  } 
+    opacity: 1;
+  }
 
   .gallery-block .zoom-on-hover:hover .image {
     transform: scale(1.3);
-    opacity: 0.7; 
+    opacity: 0.7;
   }
 }
 
@@ -373,7 +385,7 @@ html, body{
     width: 5%;
 }
 .copyright-credits{
-   color: #fc2317; 
+   color: #fc2317;
 }
 .copyright-credits:hover{
    color: #ff9900;
@@ -427,6 +439,12 @@ html, body{
     .footer-details{
         font-size: 0.8rem;
     }
+    .commitee-btn{
+      display: block;
+      border: 1px solid #000;
+      padding: 0.4rem 1rem;
+     background: none;
+    }
 }
 @media only screen and (max-width: 600px) {
     .signature-uem-image{
@@ -438,7 +456,7 @@ html, body{
 
     .v-header{
       height: 90vh;
-      
+
     }
     .header-body p{
         font-size: 0.85rem;
@@ -462,7 +480,7 @@ html, body{
         height: 50vh;
     }
     .info2-wrapper{
-      padding: 2rem;   
+      padding: 2rem;
     }
     .section-overlay{
         padding: 2rem;
@@ -470,8 +488,8 @@ html, body{
     .info3-wrapper{
         padding: 2rem;
     }
-    
-    
+
+
     .navbar-toggler{
         display: block;
     }
@@ -485,9 +503,9 @@ html, body{
         border:none;
         border-bottom: 3px solid #594a4a;
         line-height: 2rem;
-        
+
     }
-    
+
     .fullscreen-committee-links{
         display: none;
     }
