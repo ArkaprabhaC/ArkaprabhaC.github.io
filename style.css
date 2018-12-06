@@ -471,20 +471,18 @@ html, body{
         font-size: 0.85rem;
     }
     .logo_inner{
-    height: 50px; width: 70px; transform: translateY(80vh);
+    height: 50px; width: 70px; transform: translateY(72vh);
     }
     .logo_outer_left{
-        height: 50px; width: 70px;transform: translateY(80vh);
+        height: 50px; width: 70px;transform: translateY(72vh);
      }
     .logo_outer_right{
-        height: 50px; width: 70px; transform: translateY(80vh);
+        height: 50px; width: 70px; transform: translateY(72vh);
     }
     #heroVideo{
         display: none;
     }
-    .header-overlay{
-        padding-top: 5rem;
-    }
+
     .section-image{
         height: 50vh;
     }
