@@ -113,7 +113,7 @@ html, body{
     margin-bottom: 2rem;
 }
 .header-body p{
-    font-weight: 400;
+  font-weight: 500;
 }
 #mainNav{
     background-color: #000;
@@ -436,7 +436,7 @@ html, body{
     }
 
     .logo_inner{
-    height: 50px; width: 70px; transform: translateY(85vh);
+    height: 50px; width: 90px; transform: translateY(85vh);
     }
     .logo_outer_left{
         height: 50px; width: 70px;transform: translateY(85vh);
