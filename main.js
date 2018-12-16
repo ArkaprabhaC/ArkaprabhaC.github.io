@@ -55,7 +55,7 @@ $(window).on('load', function(){
 
            $(".loc_btn").click(function (){
                 $('html, body').animate({
-                    scrollTop: $(".location").offset().top - 50
+                    scrollTop: $(".location").offset().top - 80
                 }, 1000);
             });
 
